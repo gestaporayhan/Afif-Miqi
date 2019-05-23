@@ -91,10 +91,10 @@ section{
 	display:flex;
 	justify-content:center;
 	align-items: flex-end;
-	background:url(../img/arms.jpg) no-repeat;
+	background:url(../img/arms.jpg) repeat;
 	background-size:cover;
 	background-position: center;
-	background-color: #34495e;
+	background-color: #000000;
 	background-attachment: fixed;
 	z-index:9;
 }
@@ -152,11 +152,13 @@ section{
 .video video{
 	width: 40%;
 	height: auto;
+	margin: 15px -30px 0px -35px;
 }
 
 .timeline{
 	margin-top: 40px;
 	display:flex;
+	margin: 15px -30px 0px -35px;
 }
 
 .timeline .col{
@@ -167,7 +169,6 @@ section{
 }
 
 .icon{
-	width: 60%;
 	margin: 0;
 	padding: 50px 0;
 	z-index: 99;
@@ -225,7 +226,7 @@ section{
 }
 
 .service .col img{
-	max-width: 100px;
+	max-width: 50%;
 }
 
 .service .col h3{
@@ -236,6 +237,10 @@ section{
 
 .service .col p{
 	line-height: 30px;
+}
+
+section.service{
+	margin-bottom: 550px;
 }
 
 
@@ -311,13 +316,120 @@ section{
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 800px) {
-	.header {
-		width: 20000%;
-		padding: 25px 25px 25px 100px;
+
+
+    @media only screen and (max-width: 980px) {
+	    header {
+		    
+			padding: 20px 0px 25px 0px;
+			text-align: center;
+			align-content: center;
+			position: center;
+		}
 		
+		header ul li{
+			margin-left:10px;
+		}
+	    header ul li a{
+		    margin:0 5px;
+		}
+		.fixed{
+			padding: 20px 0 25px 0;
+		}
+
+		.home{
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			background-position-y: -95px;
+			background-size: 300vm;
+		}
+		.home h1{
+			font-size:30px;
+		}
+
+		.home h5{
+			font-size: 20px;
+		}
+
+		.section-title h2{
+			font-size: 20px;
+		}
+
+		.about-info{
+			padding: 20px 0;
+			padding-bottom: 200px;
+		}
+
+		.about-info .timeline{
+			font-size: 10px;
+			margin-left:-30px;
+		}
+
+		.timeline .col{
+			float: center;
+		}
+
+		.about-info p{
+			font-size: 12px;
+		}
+		.about video{
+			width: 120%;
+			align-content: center;
+			align-items: center;
+		}
+
+		.icon .col{
+			height: auto;
+			margin: -30px -30px 0px -35px;
+		}
+
+		.icon .col img{
+			width: 10%;
+			height: auto;
+			float: center;
+		}
+
+		section.about{
+			margin-bottom:280px;
+		}
+		
+		.service-info .col{
+			margin: 0 45px 0 70px;
+		}
+
+		.service .col img{
+			width: 200px;
+			float: right;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		.service-info .col h3{
+			font-size: 30px;
+			width: 200%;
+			height: auto;
+			margin: 0 0 20px -30px;
+		}
+
+		.service .col img h3{
+			margin: 0 0 20px -15px;
+		}
+
+		.service-info .col p{
+			font-size: 16px;
+			width: 200%;
+			height: auto;
+			margin: 0 0 60px -50px;
+		}
+
+		section.service{
+			margin-bottom:1400px;
+		}
 	}
-	.header ul li a{
-		margin:0 10px;
-	}
-  }
+
+
+	
+	
+    
+
